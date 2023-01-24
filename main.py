@@ -1,4 +1,6 @@
 import tkinter as tk
+import webview
+import webbrowser
 
 computer = "llixtop"
 
@@ -12,6 +14,9 @@ def handleclick(e):
     f.write(code)
     f.close()
 
+def open_browser():
+    webbrowser.open_new("https://docs.circuitpython.org/projects/hid/en/latest/_modules/adafruit_hid/keycode.html")
+
 window = tk.Tk()
 window.title("Macro Pad Gui")
 title1 = tk.Label(text="Key")
@@ -19,6 +24,9 @@ title1.grid(row=0, column=2)
 
 title2 = tk.Label(text="Binds")
 title2.grid(row=0, column=3)
+
+button = tk.Button(window, text="Open Help", command=open_browser)
+button.grid(row=0, column=4)
 
 f = open(f"/media/{computer}/CIRCUITPY/Mode1.py", "r")
 content1 = f.readlines()
