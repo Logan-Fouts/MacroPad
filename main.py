@@ -26,7 +26,10 @@ title2 = tk.Label(text="Binds")
 title2.grid(row=0, column=3)
 
 button = tk.Button(window, text="Open Help", command=open_browser)
-button.grid(row=0, column=4)
+button.grid(row=0, column=5)
+
+button2 = tk.Button(text="Save", command=lambda: handleclick(entries))
+button2.grid(row=0, column=4)
 
 f = open(f"/media/{computer}/CIRCUITPY/Mode1.py", "r")
 content1 = f.readlines()
@@ -53,8 +56,6 @@ for i in range(1, 4):
         entry.insert(0, content1[3+k][4:100])
         entry.pack(padx=5, pady=5)
         entries.append(entry)
-        button = tk.Button(master=frame, text=f"Update {k}", command=lambda: handleclick(entries))
-        button.pack()
         k += 1
 
 window.mainloop()
