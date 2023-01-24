@@ -13,43 +13,43 @@ button0 = digitalio.DigitalInOut(board.GP0)
 button0.direction = digitalio.Direction.INPUT
 button0.pull = digitalio.Pull.DOWN
 
-button1 = digitalio.DigitalInOut(board.GP1)
+button1 = digitalio.DigitalInOut(board.GP3)
 button1.direction = digitalio.Direction.INPUT
 button1.pull = digitalio.Pull.DOWN
 
-button2 = digitalio.DigitalInOut(board.GP2)
+button2 = digitalio.DigitalInOut(board.GP28)
 button2.direction = digitalio.Direction.INPUT
 button2.pull = digitalio.Pull.DOWN
 
-button3 = digitalio.DigitalInOut(board.GP3)
+button3 = digitalio.DigitalInOut(board.GP22)
 button3.direction = digitalio.Direction.INPUT
 button3.pull = digitalio.Pull.DOWN
 
-button4 = digitalio.DigitalInOut(board.GP4)
+button4 = digitalio.DigitalInOut(board.GP1)
 button4.direction = digitalio.Direction.INPUT
 button4.pull = digitalio.Pull.DOWN
 
-button5 = digitalio.DigitalInOut(board.GP5)
+button5 = digitalio.DigitalInOut(board.GP4)
 button5.direction = digitalio.Direction.INPUT
 button5.pull = digitalio.Pull.DOWN
 
-button6 = digitalio.DigitalInOut(board.GP28)
+button6 = digitalio.DigitalInOut(board.GP27)
 button6.direction = digitalio.Direction.INPUT
 button6.pull = digitalio.Pull.DOWN
 
-button7 = digitalio.DigitalInOut(board.GP27)
+button7 = digitalio.DigitalInOut(board.GP21)
 button7.direction = digitalio.Direction.INPUT
 button7.pull = digitalio.Pull.DOWN
 
-button8 = digitalio.DigitalInOut(board.GP26)
+button8 = digitalio.DigitalInOut(board.GP2)
 button8.direction = digitalio.Direction.INPUT
 button8.pull = digitalio.Pull.DOWN
 
-button9 = digitalio.DigitalInOut(board.GP22)
+button9 = digitalio.DigitalInOut(board.GP5)
 button9.direction = digitalio.Direction.INPUT
 button9.pull = digitalio.Pull.DOWN
 
-button10 = digitalio.DigitalInOut(board.GP21)
+button10 = digitalio.DigitalInOut(board.GP26)
 button10.direction = digitalio.Direction.INPUT
 button10.pull = digitalio.Pull.DOWN
 
