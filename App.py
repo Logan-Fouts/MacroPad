@@ -4,7 +4,9 @@ import tkinter as tk
 from ttkthemes import ThemedTk
 import webbrowser
 
-computer = "lfouts"
+# You will need to change the file to open location based on where your pico is
+
+computer = "TODO"
 mode = 0
 
 def read():
