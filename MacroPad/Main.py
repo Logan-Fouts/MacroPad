@@ -4,8 +4,8 @@ import digitalio
 import usb_hid
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
-from Mode1 import getKeys0
-from Mode2 import getKeys1
+from MacroPad.Mode1 import getKeys0
+from MacroPad.Mode2 import getKeys1
 
 kbd = Keyboard(usb_hid.devices)
 
