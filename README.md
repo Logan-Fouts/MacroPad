@@ -13,3 +13,4 @@
 - To create the GUI I used python with tkinter. The code essentially just overwrites whatever file it must in order to change the key binds [I know this is probably dumb, but it was my first idea so I went with it :)]
 - To change profiles on the macro pad you just simply hold buttons 1 and 3 for two seconds then when your window super + tabs you know it worked. (I wanted to use the built in led instead but since Im using a Pico w I cant figure out how to control the led with circuit python)
 > **_NOTE:_**  If you're using a normal pico you should be able to use the led. The Pico w's led it controled through the wifi module which I don't think is supported by circuitpython yet.
+![alt text](3D-Design/MacroPad.stl)
