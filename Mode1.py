@@ -1,17 +1,17 @@
 from adafruit_hid.keycode import Keycode
-def getKeys0():
+def getKeys1():
     keymap = {
-    (0): (Keycode.LEFT_ALT, Keycode.F6),
-    (1): (Keycode.LEFT_ALT, Keycode.F12),
-    (2): (Keycode.LEFT_ALT, Keycode.G),
-    (3): (Keycode.LEFT_CONTROL, Keycode.K),
-    (4): (Keycode.LEFT_ALT, Keycode.F5),
+    (0): ([Keycode.D]),
+    (1): ([Keycode.A]),
+    (2): ([Keycode.A]),
+    (3): ([Keycode.A]),
+    (4): ([Keycode.A]),
     (5): ([Keycode.A]),
-    (6): (Keycode.LEFT_ALT, Keycode.F4),
-    (7): ([Keycode.O]),
-    (8): ([Keycode.LEFT_ALT, Keycode.F2]),
-    (9): (Keycode.LEFT_CONTROL, Keycode.K),
-    (10): (Keycode.LEFT_CONTROL, Keycode.D),
-    (11): (Keycode.LEFT_CONTROL, Keycode.LEFT_SHIFT, Keycode.P)
+    (6): ([Keycode.A]),
+    (7): ([Keycode.A]),
+    (8): ([Keycode.A]),
+    (9): ([Keycode.A]),
+    (10): ([Keycode.A]),
+    (11): ([Keycode.A])
 }
     return keymap
