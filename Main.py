@@ -64,13 +64,13 @@ keymap1 = getKeys1()
 
 while True:
     if mode == 0:
-        if button0.value:
+        if button0.value and not button3.value:
             kbd.send(*keymap0[0])
         if button1.value:
             kbd.send(*keymap0[1])
         if button2.value:
             kbd.send(*keymap0[2])
-        if button3.value:
+        if button3.value and not button0.value:
             kbd.send(*keymap0[3])
         if button4.value:
             kbd.send(*keymap0[4])
@@ -92,14 +92,15 @@ while True:
             time.sleep(2)
             if button0.value and button3.value:
                 mode = 1
+                kbd.send(Keycode.GUI, Keycode.TAB)
     if mode == 1:
-        if button0.value:
+        if button0.value and not button3.value:
             kbd.send(*keymap1[0])
         if button1.value:
             kbd.send(*keymap1[1])
         if button2.value:
             kbd.send(*keymap1[2])
-        if button3.value:
+        if button3.value and not button0.value:
             kbd.send(*keymap1[3])
         if button4.value:
             kbd.send(*keymap1[4])
@@ -121,4 +122,5 @@ while True:
             time.sleep(2)
             if button0.value and button3.value:
                 mode = 0
+                kbd.send(Keycode.GUI, Keycode.TAB)
     time.sleep(0.1)
