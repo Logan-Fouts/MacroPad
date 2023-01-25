@@ -88,9 +88,9 @@ while True:
             kbd.send(*keymap0[10])
         if button11.value:
             kbd.send(*keymap0[11])
-        if button0.value and button9.value:
+        if button0.value and button3.value:
             time.sleep(2)
-            if button0.value and button9.value:
+            if button0.value and button3.value:
                 mode = 1
     if mode == 1:
         if button0.value:
@@ -117,8 +117,8 @@ while True:
             kbd.send(*keymap1[10])
         if button11.value:
             kbd.send(*keymap1[11])
-        if button0.value and button9.value:
+        if button0.value and button3.value:
             time.sleep(2)
-            if button0.value and button9.value:
+            if button0.value and button3.value:
                 mode = 0
     time.sleep(0.1)
