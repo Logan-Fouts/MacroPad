@@ -33,6 +33,7 @@ def handleclick(e):
     code += "}\n    return keymap"
     f.write(code)
     f.close()
+    read()
 
 def open_browser():
     webbrowser.open_new("https://docs.circuitpython.org/projects/hid/en/latest/_modules/adafruit_hid/keycode.html")
